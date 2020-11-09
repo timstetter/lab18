@@ -11,10 +11,10 @@ public class PrimeNumbers {
 
 		System.out.println("Let’s locate some primes!");
 
-		System.out.println("This application will find you any prime, in order, from first prime number on.");
+		System.out.println("This application will let you enter any number, It will tell you if it's prime and which prime number it is.");
 		boolean keepGoing = true;
 		while (keepGoing) {
-			int userInput = Validator.getIntInRange(scnr, "Enter a prime number between 2 and 271: ", 2, 1001);
+			int userInput = Validator.getIntInRange(scnr, "Enter a prime number between 2 and 999983: ", 2, 999983);
 
 			if (primeCounter(userInput) == 0) {
 				System.out.println(userInput + " is not a prime number");
